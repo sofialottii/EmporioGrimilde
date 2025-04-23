@@ -1,0 +1,340 @@
+/* palette di colori */
+
+:root {
+    --primary: #750000;
+    --secondary: #cc0000;
+    --background: rgb(255, 214, 138);
+    --text: #000000;
+    --error: #b00020;
+    /* prove porpora
+    --primary: #670035;
+    --secondary: #d70068;
+    --background: rgb(254, 204, 112);
+    */
+}
+
+/* regole di reset */
+
+body,header,h1, h2,h5,ul, main {
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+}
+
+body {
+    padding: 0 !important;
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+* {
+    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+    font-family: 'Shadows Into Light Two', cursive;
+    
+    font-size: 18px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&family=Shadows+Into+Light+Two&display=swap');
+body>header>h1, article>h2, section>h2 {
+    font-family: 'Mansalva', cursive;
+    color: var(--secondary);
+    text-align: center;
+    font-weight: 600;
+}
+
+/* caratteristiche generali tag */
+
+h1 {
+    margin: 0 !important;
+}
+
+h1>a {
+    all: unset;
+    cursor: pointer;
+}
+
+h1>a:hover {
+    color: var(--primary);
+}
+
+body>header {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #fff;
+}
+
+body>footer {
+    background-color: rgb(54, 54, 54);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+body>main, body {
+    background-color: var(--background) !important;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+/* BOTTONI, INPUT E A GENERALI */
+
+form input[type="submit"]:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+form input[type="submit"]:active,
+a:active {
+    transform: scale(0.95);
+}
+
+input[type="radio"] {
+    color: black;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* ARTICOLI E SEZIONI MAIN */
+
+body>main>article,
+body>main>section, .temporaneo {
+    border: 2px solid rgba(0, 0, 0, 0.625);
+    border-radius: 5px;
+    padding: 20px 5% !important;
+    background-color: white;
+}
+
+@media (min-width: 768px) {
+    .temporaneo {
+        padding: 20px 3% !important;
+    }
+}
+
+.click:hover {
+    background-color: lightgray;
+    transform: scale(1.05);
+    transition: all 0.4s;
+}
+
+.click:active {
+    background-color: gray;
+    transform: scale(0.95);
+    transition: all 0.4s;
+}
+
+.click {
+    transition: transform 0.4s ease-in-out;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.cliccabile section {
+    display: flex;
+    justify-content: center;
+    height: 200px; /* Imposta un'altezza fissa per la sezione immagine */
+    overflow: hidden; /* Evita problemi con immagini più grandi */
+}
+
+.cliccabile img {
+    height: 100%;
+    object-fit: cover; /* Ritaglia l'immagine per riempire la sezione */
+    border-radius: 5px;
+}
+
+
+form input[type="submit"],
+body>main>section>div>ul>li>a, .bottone2{
+    /*width: 60%;*/
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 10%;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: #f4f4f4;
+    font-weight: 600;
+}
+.bottone{
+    display: inline-block;
+    text-align: center;
+    padding: 5px 10%;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: #f4f4f4;
+    font-weight: 600;
+    text-decoration: none;
+    /*box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);*/
+    /*width: 75%;*/
+    border: 2px solid rgba(0, 0, 0, 0.4);
+}
+.bottone:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+.bottone:active {
+    transform: scale(0.95);
+}
+
+/* RECENSIONI */
+
+h2 span {
+    color: var(--secondary);
+    font-size: inherit;
+}
+
+/* OFFCANVAS */
+
+
+@media (max-width: 992px) { 
+        body>header div div div {
+            align-items: center;
+            padding: 0 !important;
+        }
+    
+        body>header div div h2 {
+            color: black;
+            font-size: 30px;
+            font-weight: 600;
+            text-align: left;
+            align-items: center;
+        }
+    
+        body>header div div img {
+            width: 100%;
+        }
+    
+        /*elenco offcanvas*/
+    
+        div div nav>ul>li {
+            margin: 10px 5%;
+            
+        }
+
+        div div nav>ul>li>a:hover {
+            background-color: lightgray;
+        }
+    
+        div div nav>ul>li>a {
+            display: block;
+            color: black;
+            font-size: 1.5em;
+            padding: 10px 0;
+            transition: all 0.3s ease;
+        }
+    
+        /*logout offcanvas*/
+    
+        header div form input[type="submit"] {
+            padding: 10px 30%;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+    
+        header div form input[type="submit"]:hover {
+            background-color: #e60000;
+            transform: scale(1.05);
+        }
+    
+        header div form input[type="submit"]:active {
+            background-color: var(--secondary);
+            transform: scale(0.95);
+        }
+}
+
+/*RECENSIONI*/
+
+section>form>ul>li>div>label { /*stelle*/
+    font-size: 2rem;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.4s;
+}
+
+textarea {
+    height: 150px;
+}
+
+/* CONTENUTO TRACCIAMENTO */
+
+section>ul>li>input[type="radio"] {
+    accent-color: var(--text);
+    filter: invert(0.1);
+    transform: scale(1.4);
+}
+
+/* bottone preferiti */
+
+header>button, article>div>button, .btn-pagProdotto {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 100%;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*bottone carrello */
+
+form[action="carrello.php"] {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+form[action="carrello.php"]>button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #9d9b9b;
+}
+
+form>button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+/* img carrello */
+
+tr > td img {
+    padding: .25rem;
+    background-color: var(--bs-body-bg);
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    max-width: 80px;
+    max-height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.nasc {
+    display: none;
+}
+
+.redbg {
+    background-color: var(--primary)  !important;
+}
