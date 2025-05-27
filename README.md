@@ -11,11 +11,27 @@ Frontend: HTML, CSS, JavaScript, Bootstrap
 Database: MySQL
 
 # 🚀 Come Avviare il Progetto
--Clonare il repository
+- Clonare il repository
 
--Avviare un server locale (XAMPP, WAMP, ecc.)
+- Avviare un server locale (XAMPP, WAMP, ecc.) e premere sui bottoni "start" che corrispondono alle voci Apache e MySQL
 
--Importare il database in MySQL e popolarlo (file presenti nel repository, rispettivamente GrimildeDatabase.SQL e inserisci_dati.sql, entrambi nella cartella db)
+- Aprire http://localhost/phpmyadmin/index.php?route=/ (phpMyAdmin), premere su "SQL". Copiare e incollare nell'apposita area
+il contenuto di db/GrimildeDatabase.SQL e subito dopo fare la stessa con dn/inserisci_dati.sql (in questo modo avrai importato
+e popolato il database)
 
--Accedere tramite browser all'URL del progetto (http://localhost/Web-project/php/)
+- Accedere tramite browser all'URL del progetto (http://localhost/Web-project/php/)
 
+# 🕹️ Aprire il progetto dalla seconda volta in poi
+- Avviare XAMPP e premere sui bottoni "start" che corrispondono alle voci Apache MySQL
+
+- Accedere tramite browser all'URL del progetto (http://localhost/Web-project/php/)
+
+# 🔎 Informazioni utili
+E-Mail e Password già inserite
+| E-MAIL | PASSWORD | AMMINISTRATORE |
+|--- |--- |--- |
+| sofialotti17@gmail.com | ciao1234 | NO |
+| sebastiano.lucarelli@gmail.com | ciao5678 | NO |
+
+E-Mail amministratore: paolorossi@gmail.com
+Password amministratore: admin
