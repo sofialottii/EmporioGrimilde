@@ -5,7 +5,7 @@
         </div>
     <?php else: ?>
         <form action="#" method="POST" class="text-center mb-4">
-            <label for="cancNot" hidden></label><input type="submit" id="cancNot" name="cancellanotifiche" value="Elimina Tutte">
+            <label for="cancNot" hidden>cancella</label><input type="submit" id="cancNot" name="cancellanotifiche" value="Elimina Tutte">
         </form>
 
     <div class="card shadow-sm">
@@ -15,7 +15,7 @@
                 <?php $count++; ?>
                 <section class="p-3 border rounded shadow-sm mb-3 bg-light">
                     <form action="notifica.php" method="GET" class="d-flex flex-column">
-                        <label for="IDNotifica<?php echo $count; ?>" hidden></label><input type="number" class="d-none" id="IDNotifica<?php echo $count; ?>" name="IdNotifica" value="<?php echo $notifica["IdNotifica"]; ?>" />
+                        <label for="IDNotifica<?php echo $count; ?>" hidden>id</label><input type="number" class="d-none" id="IDNotifica<?php echo $count; ?>" name="IdNotifica" value="<?php echo $notifica["IdNotifica"]; ?>" />
                         
                         <!-- Layout Desktop -->
                         <div class="d-none d-md-flex justify-content-between align-items-center">
@@ -39,13 +39,13 @@
                                 </span>
                             </p>
                             
-                            <label for="aprii<?php echo $count; ?>" hidden></label><button type="submit" class="btn btn-primary btn-sm" id="aprii<?php echo $count; ?>">Apri</button>
+                            <label for="aprii<?php echo $count; ?>" hidden>apri</label><button type="submit" class="btn btn-primary btn-sm" id="aprii<?php echo $count; ?>">Apri</button>
                         </div>
                     </form>
 
                     <form action="#" method="POST" class="mt-2">
-                        <label for="idNot<?php echo $count; ?>" hidden></label><input type="number" class="d-none" id="idNot<?php echo $count; ?>" name="IdNotifica" value ="<?php echo $notifica["IdNotifica"] ?>"/>
-                        <label for="rimuovi<?php echo $count; ?>" hidden></label><input type="submit" id="rimuovi<?php echo $count; ?>" name="rimuovi" class="w-100" value="Rimuovi"/>
+                        <label for="idNot<?php echo $count; ?>" hidden>idNotifica</label><input type="number" class="d-none" id="idNot<?php echo $count; ?>" name="IdNotifica" value ="<?php echo $notifica["IdNotifica"] ?>"/>
+                        <label for="rimuovi<?php echo $count; ?>" hidden>rimuovi</label><input type="submit" id="rimuovi<?php echo $count; ?>" name="rimuovi" class="w-100" value="Rimuovi"/>
                     </form>
                 </section>
             <?php endforeach; ?>

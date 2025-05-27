@@ -28,9 +28,9 @@
             <div class="card-footer d-flex justify-content-between align-items-center">
                 <small class="text-muted">Data: <?php echo $recensione["DataRecensione"]; ?></small>
                     <form action="#" method="POST">
-                        <label for="DataRec<?php echo $count; ?>" hidden></label><input type="text" class="d-none" id="DataRec<?php echo $count; ?>" name="dataRecensione" value ="<?php echo $recensione["DataRecensione"] ?>"/>
-                        <label for="MailRec<?php echo $count; ?>" hidden></label><input type="text" class="d-none" id="MailRec<?php echo $count; ?>" name="mailRecensione" value ="<?php echo $recensione["E_mail"] ?>"/>
-                        <label for="rimuovi<?php echo $count; ?>" hidden></label><input type="submit" id="rimuovi<?php echo $count; ?>" name="rimuovi" value="Rimuovi"/>
+                        <label for="DataRec<?php echo $count; ?>" hidden>data</label><input type="text" class="d-none" id="DataRec<?php echo $count; ?>" name="dataRecensione" value ="<?php echo $recensione["DataRecensione"] ?>"/>
+                        <label for="MailRec<?php echo $count; ?>" hidden>mail</label><input type="text" class="d-none" id="MailRec<?php echo $count; ?>" name="mailRecensione" value ="<?php echo $recensione["E_mail"] ?>"/>
+                        <label for="rimuovi<?php echo $count; ?>" hidden>rimuovi</label><input type="submit" id="rimuovi<?php echo $count; ?>" name="rimuovi" value="Rimuovi"/>
                     </form>
                 
             </div>

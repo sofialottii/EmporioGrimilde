@@ -10,7 +10,7 @@
 
 -- ELIMINA DATABASE
 
-DROP DATABASE GrimildeDatabase;
+DROP DATABASE IF EXISTS GrimildeDatabase;
 
 -- CREA IL DATABASE
 

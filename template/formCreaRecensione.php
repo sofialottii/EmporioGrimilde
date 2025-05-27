@@ -11,23 +11,25 @@
                 <textarea id="testoRecensione" name="testoRecensione" class="form-control" autocomplete="off"></textarea>
             </li>
             <li class="text-center">
-                <span>Seleziona stelle:</span>
-                <div>
-                    <input type="radio" id="star1" name="rating" value="1" hidden />
-                    <label for="star1">★</label>
+                <fieldset class="border-0">
+                    <legend class="col-form-label pt-0">Seleziona stelle:</legend>
+                    <div>
+                        <input type="radio" id="star1" name="rating" value="1" hidden />
+                        <label for="star1">★</label>
 
-                    <input type="radio" id="star2" name="rating" value="2" hidden />
-                    <label for="star2">★</label>
+                        <input type="radio" id="star2" name="rating" value="2" hidden />
+                        <label for="star2">★</label>
 
-                    <input type="radio" id="star3" name="rating" value="3" hidden />
-                    <label for="star3">★</label>
+                        <input type="radio" id="star3" name="rating" value="3" hidden />
+                        <label for="star3">★</label>
 
-                    <input type="radio" id="star4" name="rating" value="4" hidden />
-                    <label for="star4">★</label>
+                        <input type="radio" id="star4" name="rating" value="4" hidden />
+                        <label for="star4">★</label>
 
-                    <input type="radio" id="star5" name="rating" value="5" hidden />
-                    <label for="star5">★</label>
-                </div>
+                        <input type="radio" id="star5" name="rating" value="5" hidden />
+                        <label for="star5">★</label>
+                    </div>
+                </fieldset>
                 <p id="output">Voto: 0/5</p>
                 <script src="../js/recensione.js"></script>
 
@@ -38,9 +40,6 @@
             
                 <a href="index.php" class="bottone">Indietro</a>
             </li>
-            <!--<li>
-                <a href="index.php">Indietro</a>
-            </li>-->
         </ul>
     </form>
     </section>

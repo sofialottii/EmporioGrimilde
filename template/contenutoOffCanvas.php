@@ -22,7 +22,6 @@
     <div class="d-flex align-items-center gap-3">
         <a href="storicoNotifiche.php" class="text-dark btn btn-light position-relative">Notifiche 
             <?php if(isset($_SESSION["E_mail"])): ?>
-                <!--class="badge bg-danger position-absolute top-0 start-100 translate-middle"-->
                 <span class="badge text-bg-secondary">
                     <?php echo !$dbh->isUtenteAdmin($_SESSION["E_mail"]) ? $dbh->countNotificheDaLeggere() : $dbh->countNotificheAdminDaLeggere(); ?>
                 </span>
@@ -40,9 +39,9 @@
                         <img src="../utils/img/icons/specchio.png" alt="icona accesso" />
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item noscale" href="register.php">Registrati</a></li>
-                        <li><a class="dropdown-item noscale" href="login.php">Accedi</a></li>
-                        <li><a class="dropdown-item noscale" href="areaRiservata.php">Area Riservata</a></li>
+                        <li><a class="dropdown-item noscale color-active" href="register.php">Registrati</a></li>
+                        <li><a class="dropdown-item noscale color-active" href="login.php">Accedi</a></li>
+                        <li><a class="dropdown-item noscale color-active" href="areaRiservata.php">Area Riservata</a></li>
                     </ul>
                 </div>
             <?php endif; ?>
@@ -103,15 +102,15 @@
                 <ul class="list-unstyled">
                     <li>
                         <label for="regButton" hidden></label>
-                        <input type="submit" id="regButton" name="registrati" value="Registrati" class="btn btn-outline-primary w-100 mb-2" />
+                        <input type="submit" id="regButton" name="registrati" value="Registrati" class="btn btn-outline-danger w-100 mb-2" />
                     </li>
                     <li>
                         <label for="loginButton" hidden></label>
-                        <input type="submit" id="loginButton" name="login" value="Accedi" class="btn btn-outline-success w-100 mb-2" />
+                        <input type="submit" id="loginButton" name="login" value="Accedi" class="btn btn-outline-danger w-100 mb-2" />
                     </li>
                     <li>
                         <label for="adminButton" hidden></label>
-                        <input type="submit" id="adminButton" name="loginAdmin" value="Area Riservata" class="btn btn-outline-warning w-100" />
+                        <input type="submit" id="adminButton" name="loginAdmin" value="Area Riservata" class="btn btn-outline-danger w-100" />
                     </li>
                 </ul>
             <?php endif; ?>

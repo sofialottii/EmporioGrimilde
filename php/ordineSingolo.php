@@ -16,7 +16,7 @@ else{
 $templateParams["canvas"] = "contenutoOffCanvas.php";
 comandiCanvas();
 
-$templateParams["titolo"] = "Grimilde's - Ordine " . $_GET["IdSingoloOrdine"]; //title
+$templateParams["titolo"] = "Grimilde's - Ordine " . $_GET["IdSingoloOrdine"];
 $templateParams["nome"] = "contenutoOrdine.php";
 
 $templateParams["contenuto"] = $dbh->getElementiOrdine($_GET["IdSingoloOrdine"], $_GET["mail"]);

@@ -15,7 +15,7 @@ Database: MySQL
 
 -Avviare un server locale (XAMPP, WAMP, ecc.)
 
--Importare il database in MySQL e popolarlo (file presenti nel repository)
+-Importare il database in MySQL e popolarlo (file presenti nel repository, rispettivamente GrimildeDatabase.SQL e inserisci_dati.sql, entrambi nella cartella db)
 
--Accedere tramite browser all'URL del progetto
+-Accedere tramite browser all'URL del progetto (http://localhost/Web-project/php/)
 

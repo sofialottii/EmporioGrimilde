@@ -2,7 +2,7 @@
 require_once("bootstrap.php");
 
 session_start();
-//tutta la gestione dei bottoni e dell'iscriviti
+//tutta la gestione dei bottoni e dell'iscrizione
 if(isset($_POST["accedi"])){
     $email = $_POST["E_mail"];
     $password = $_POST["password"];

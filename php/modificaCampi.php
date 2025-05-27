@@ -41,7 +41,7 @@ if(isUserLoggedIn()){
         }
 
     }
-    $templateParams["titolo"] = "Grimilde's - Modifica Dati"; //title
+    $templateParams["titolo"] = "Grimilde's - Modifica Dati";
     $templateParams["nome"] = "contenutioModificaCampi.php";
 
 require("../template/base.php");

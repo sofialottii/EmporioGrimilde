@@ -12,7 +12,6 @@ class DatabaseHelper{
 
     /* INDEX */
     public function getRecensioni() {
-    //$n=3;
     $stmt = $this->db->prepare("
         SELECT r.NumeroStelle, r.DataRecensione, 
             r.TestoRecensione, c.Nome, c.Cognome
@@ -21,12 +20,9 @@ class DatabaseHelper{
         ON r.E_mail = c.E_mail
         ORDER BY r.DataRecensione DESC
         ");
-    //LIMIT ?
-    //$stmt->bind_param("i",$n);
 
     $stmt->execute();
     $result = $stmt->get_result();
-
     return $result->fetch_all(MYSQLI_ASSOC);
     }
 
@@ -93,7 +89,7 @@ class DatabaseHelper{
         $stmt->execute();
         $result = $stmt->get_result();
         return $result->fetch_all(MYSQLI_ASSOC);
-    } //questa query è per gli admin perché non controlla la Visibile = Y
+    } //query per gli admin perché non controlla la Visibile = Y
 
     public function getProdottiUtenti($cercaProdotto){
         $cercaProdotto = "%".$cercaProdotto."%";
@@ -613,17 +609,7 @@ class DatabaseHelper{
         $result = $stmt->get_result();
         return $result->fetch_all(MYSQLI_ASSOC);
     }
-/*ELIMINA */
-    public function emily(){
-        $utente = $_SESSION["E_mail"];
-        $stmt = $this->db->prepare("SELECT Nome
-                                    FROM CLIENTE
-                                    WHERE E_mail = ?");
-        $stmt->bind_param("s", $utente);
-        $stmt->execute();
-        $result = $stmt->get_result();
-        return $result->fetch_all(MYSQLI_ASSOC);
-    }
+
 }
 
 ?>

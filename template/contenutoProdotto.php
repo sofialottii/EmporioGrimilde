@@ -9,7 +9,7 @@
 
             <!--bottone preferiti-->
             <?php if(isUserLoggedIn() && !$dbh->isUtenteAdmin($_SESSION["E_mail"])): ?>
-                <label for="cambia_cuore<?php echo $templateParams["articolo"][0]['IDProdotto']; ?>" hidden></label>
+                <label for="cambia_cuore<?php echo $templateParams["articolo"][0]['IDProdotto']; ?>" hidden>cuore</label>
                 <button id="cambia_cuore<?php echo $templateParams["articolo"][0]['IDProdotto']; ?>" class="btn-pagProdotto d-block m-2 m-md-0" type="button">
                     <img src="<?php echo checkPreferito($templateParams['articolo'][0]['IDProdotto']); ?>" alt="cuore-vuoto" />        
                 </button>
@@ -29,7 +29,7 @@
                             <ul class="p-0 form">
                                 <li class="mb-3">
                                     <p>Quantità in Kg:</p>
-                                    <label for="quantita" class="form-label" hidden></label>
+                                    <label for="quantita" class="form-label" hidden>quantita</label>
                                     <input type="number" name="quantita" id="quantita" class="form-control" min="0"
                                     max="<?php echo $templateParams["articolo"][0]["QuantitaDisponibile"]; ?>" value="0" autocomplete="off" />
                                 </li>
@@ -45,10 +45,10 @@
                                 <li class="d-block">
                                     <a href="acquisto.php" class="bottone mb-3">Torna agli acquisti</a>
                                     <?php if (isUserLoggedIn()): ?>
-                                        <label for="aggiungiCarrello" hidden></label><input type="submit" value="Aggiungi" name="aggiungiCarrello" id="aggiungiCarrello"
+                                        <label for="aggiungiCarrello" hidden>aggiungi</label><input type="submit" value="Aggiungi" name="aggiungiCarrello" id="aggiungiCarrello"
                                         <?php if($templateParams["articolo"][0]["QuantitaDisponibile"] == 0):?>disabled class="btn btn-dark border border-black"<?php endif;?> />
                                     <?php else: ?>
-                                        <label for="carrelloAccedi" hidden></label><input type="submit" value="Fai il login" name="carrelloAccedi" id="carrelloAccedi"
+                                        <label for="carrelloAccedi" hidden>accedi</label><input type="submit" value="Fai il login" name="carrelloAccedi" id="carrelloAccedi"
                                         class="bottone" />
                                     <?php endif; ?>
                                 </li>
@@ -70,7 +70,7 @@
                                     <label for="quantitaRifornimento">Quantità rifornimento</label>
                                 </li>
                                 <li class="d-block text-end mb-3">
-                                    <label for="cambiaRifornimento" class="form-label" hidden></label>
+                                    <label for="cambiaRifornimento" class="form-label" hidden>cambia</label>
                                     <input type="submit" name="cambiaRifornimento" id="cambiaRifornimento" value="RIFORNISCI"/>
                                 </li>
                                 <li class="mb-2 form-floating">
@@ -79,11 +79,11 @@
                                     <label for="nuovoPrezzo" class="text-secondary">Nuovo prezzo:</label>
                                 </li>
                                 <li class="d-block text-end mb-3">
-                                    <label for="cambiaPrezzo" class="form-label" hidden></label>
+                                    <label for="cambiaPrezzo" class="form-label" hidden>cambia</label>
                                     <input type="submit" id="cambiaPrezzo" name="cambiaPrezzo" value="CAMBIA PREZZO" />
                                 </li>
                                 <li class="d-block text-end mb-3">
-                                    <label for="cambiaVisibilita" class="form-label" hidden></label>
+                                    <label for="cambiaVisibilita" class="form-label" hidden>cambia</label>
                                     <input type="submit" id="cambiaVisibilita" name="cambiaVisibilita" class="px-4" value="RENDI <?php if($templateParams["articolo"][0]["Visibile"] == 'Y'):?>INVISIBILE<?php else:?>VISIBILE<?php endif;?>" />
                                 </li>
                                 <li>

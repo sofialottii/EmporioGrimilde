@@ -2,7 +2,7 @@
 require_once("bootstrap.php");
 session_start();
 
-$templateParams["titolo"] = "Grimilde's - Storico Oridini"; //title
+$templateParams["titolo"] = "Grimilde's - Storico Oridini";
 $templateParams["nome"] = "listaOrdini.php";
 
 if(isUserLoggedIn()){

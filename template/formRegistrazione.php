@@ -32,10 +32,10 @@
                 <option value="Altro">Altro</option>
             </select>
         </li>
-        <li class="text-center">
+        <li class="text-center mb-2">
             <label for="iscriviti" class="form-label" hidden></label><input type="submit" name="iscriviti" id="iscriviti" value="Iscriviti" class="w-50" />
         </li>
-        <li class="text-center">
+        <li class="text-center ">
             <a href="login.php">Hai già un account? Accedi</a>
         </li>
     </ul>

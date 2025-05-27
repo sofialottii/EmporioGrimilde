@@ -15,12 +15,6 @@ else{
 /*canvas*/
 $templateParams["canvas"] = "contenutoOffCanvas.php";
 comandiCanvas();
-
-$nomeUtente = $dbh->emily();
-    if (!empty($nomeUtente) && $nomeUtente[0]["Nome"] === "Emily") {
-        $templateParams["emily"] = true;
-    }
-
     
 
 $templateParams["titolo"] = "Grimilde's - Profilo";

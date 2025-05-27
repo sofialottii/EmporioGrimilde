@@ -13,8 +13,8 @@
                 <?php $count++; ?>
                 <section class="p-3 border rounded shadow-sm mb-3 bg-light">
                     <form action="ordineSingolo.php" method="GET" class="d-flex flex-column">
-                        <label for="IDOrdine<?php echo $count;?>" hidden></label><input type="number" class="d-none" id="IDOrdine<?php echo $count;?>" name="IdSingoloOrdine" value="<?php echo $ordin["IDOrdine"]; ?>" />
-                        <label for="IDE_mail<?php echo $count;?>" hidden></label><input type="text" class="d-none" id="IDE_mail<?php echo $count;?>" name="mail" value="<?php echo $ordin["E_mail"]; ?>" />
+                        <label for="IDOrdine<?php echo $count;?>" hidden>id</label><input type="number" class="d-none" id="IDOrdine<?php echo $count;?>" name="IdSingoloOrdine" value="<?php echo $ordin["IDOrdine"]; ?>" />
+                        <label for="IDE_mail<?php echo $count;?>" hidden>mail</label><input type="text" class="d-none" id="IDE_mail<?php echo $count;?>" name="mail" value="<?php echo $ordin["E_mail"]; ?>" />
                         
                         <!-- Layout Desktop -->
                         <div class="d-none d-md-flex justify-content-between align-items-center">
@@ -40,7 +40,7 @@
                                     </footer>
                                 <?php endif; ?>
                             </div>
-                            <label for="aprii<?php echo $count;?>" hidden></label><button type="submit" class="btn btn-primary btn-sm" id="aprii<?php echo $count;?>">></button>
+                            <label for="aprii<?php echo $count;?>" hidden>apri</label><button type="submit" class="btn btn-primary btn-sm" id="aprii<?php echo $count;?>">></button>
                         </div>                        
 
                     </form>
