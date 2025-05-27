@@ -27,11 +27,9 @@ e popolato il database)
 - Accedere tramite browser all'URL del progetto (http://localhost/Web-project/php/)
 
 # 🔎 Informazioni utili
-E-Mail e Password già inserite
+E-Mail e Password già inserite in Database:
 | E-MAIL | PASSWORD | AMMINISTRATORE |
 |--- |--- |--- |
 | sofialotti17@gmail.com | ciao1234 | NO |
 | sebastiano.lucarelli@gmail.com | ciao5678 | NO |
-
-E-Mail amministratore: paolorossi@gmail.com
-Password amministratore: admin
+| paolorossi@gmail.com | admin | SI |
