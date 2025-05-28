@@ -1,16 +1,16 @@
 # EMPORIO DI GRIMILDE || E-COMMERCE
 
-# 📌 Descrizione
+## 📌 Descrizione
 Questo progetto è un e-commerce di frutta realizzato con un'architettura lato utente e lato amministratore. L'obiettivo è fornire un'interfaccia intuitiva per la navigazione e l'acquisto dei prodotti, oltre a un sistema di gestione per l'amministrazione del negozio.
 
-# 🛠️ Tecnologie Utilizzate
+## 🛠️ Tecnologie Utilizzate
 Backend: PHP
 
 Frontend: HTML, CSS, JavaScript, Bootstrap
 
 Database: MySQL
 
-# 🚀 Come Avviare il Progetto
+## 🚀 Come Avviare il Progetto
 - Clonare il repository
 
 - Avviare un server locale (XAMPP, WAMP, ecc.) e premere sui bottoni "start" che corrispondono alle voci Apache e MySQL
@@ -21,12 +21,12 @@ e popolato il database)
 
 - Accedere tramite browser all'URL del progetto (http://localhost/Web-project/php/)
 
-# 🕹️ Aprire il progetto dalla seconda volta in poi
+## 🕹️ Aprire il progetto dalla seconda volta in poi
 - Avviare XAMPP e premere sui bottoni "start" che corrispondono alle voci Apache MySQL
 
 - Accedere tramite browser all'URL del progetto (http://localhost/Web-project/php/)
 
-# 🔎 Informazioni utili
+## 🔎 Informazioni utili
 E-Mail e Password già inserite in Database:
 | E-MAIL | PASSWORD | AMMINISTRATORE |
 |--- |--- |--- |
