@@ -18,10 +18,6 @@
             <li class="d-flex gap-3">
                 <input type="radio" id="nuovaCarta" name="metodo_pagamento" value="carta_credito" required />
                 <label for="nuovaCarta">Carta di credito</label></li>
-
-            <li class="d-flex gap-3">
-                <input type="radio" id="contanti" name="metodo_pagamento" value="contanti" disabled required />
-                <label for="contanti">Contanti</label></li>
         </ul>
     
     </section>
