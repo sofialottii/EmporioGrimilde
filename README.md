@@ -11,20 +11,20 @@ Frontend: HTML, CSS, JavaScript, Bootstrap
 Database: MySQL
 
 ## 🚀 Come Avviare il Progetto
-- Clonare il repository
+- Clonare il repository (inserirlo in locale in questo percorso: C:\xampp\htdocs)
 
 - Avviare un server locale (XAMPP, WAMP, ecc.) e premere sui bottoni "start" che corrispondono alle voci Apache e MySQL
 
 - Aprire http://localhost/phpmyadmin/index.php?route=/ (phpMyAdmin), premere su "SQL". Copiare e incollare nell'apposita area
-il contenuto di db/GrimildeDatabase.SQL e subito dopo fare la stessa con dn/inserisci_dati.sql (in questo modo avrai importato
+il contenuto di db/GrimildeDatabase.SQL e subito dopo fare la stessa con db/inserisci_dati.sql (in questo modo avrai importato
 e popolato il database)
 
-- Accedere tramite browser all'URL del progetto (http://localhost/Web-project/php/)
+- Accedere tramite browser all'URL del progetto (http://localhost/EmporioGrimilde/php/)
 
 ## 🕹️ Aprire il progetto dalla seconda volta in poi
 - Avviare XAMPP e premere sui bottoni "start" che corrispondono alle voci Apache MySQL
 
-- Accedere tramite browser all'URL del progetto (http://localhost/Web-project/php/)
+- Accedere tramite browser all'URL del progetto (http://localhost/EmporioGrimilde/php/)
 
 ## 🔎 Informazioni utili
 E-Mail e Password già inserite in Database:
